@@ -1,0 +1,70 @@
+html { background-color: darkolivegreen; 
+		color:  white;
+		font-family:  Helvetica, Arial, sans-serif;
+}
+
+body { margin:  0px;
+}
+
+.row {
+	border-bottom:  2px solid white;
+	height: 25vh;
+
+	display: flex;
+	
+}
+
+#welcome_text {
+	font-size:  80px;
+}
+
+#row_one > div {
+	border-right: 2px solid white;
+
+}
+
+#row_two > div {
+	border-right: 2px solid white;
+
+}
+
+#fill_on_hover {
+	width:  300px;
+}
+
+#expanding_rectangle {
+	height:  100%;
+	width:  0;
+	transition:  .4s ease all;
+}
+
+#fill_on_hover:hover > #expanding_rectangle {
+	width:  100%;
+	background-color:  darkgrey;
+}
+
+#rotating_emoji {
+	align-items:  center;
+	display:  flex;
+	justify-content: center;
+	
+	}
+
+#emoji {
+	font-size:  100px;
+	animation:  spin_around linear 3s infinite;
+}
+
+#emoji:hover {
+	animation:  spin_around linear 1s infinite;
+
+}
+
+@keyframes spin_around {
+	0% {
+		transform:  rotate(0);
+	}
+	100% {
+		transform:  rotate(360deg);
+	}
+}
